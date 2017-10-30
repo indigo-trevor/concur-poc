@@ -1,0 +1,40 @@
+.is-hidden--desktop {
+
+  @include respond-to(desktop) {
+    display: none !important;
+  }
+
+}
+
+.is-hidden--tablet {
+
+  @include respond-to(tablet) {
+    display: none !important;
+  }
+
+}
+
+.is-hidden--mobile {
+
+  @include respond-to(mobile) {
+    display: none !important;
+  }
+
+}
+
+.no-margin--tablet {
+
+  @include respond-to(tablet) {
+    margin: 0px 0px !important;
+  }
+
+}
+
+
+.no-margin--mobile {
+
+  @include respond-to(mobile) {
+    margin: 0px 0px !important;
+  }
+
+}

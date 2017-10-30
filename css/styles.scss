@@ -1,0 +1,14 @@
+// Mixins
+@import "partials/__reset.scss";          // Boilerplate globals
+@import "partials/__mixins.scss";         // SASS Mixins
+
+// Globals
+@import "partials/__variables";           // Sitewide variables declaration
+@import "partials/__fonts";               // Sitewide font declaration
+@import "partials/__globals";             // Sitewide styling of core DOM
+@import "partials/__grid";                // Grid
+@import "partials/__sections";            // Sections
+@import "partials/__nav";                 // Navigation
+@import "partials/__actionables";         // Actionables (i.e. buttons, links, inputs)
+@import "partials/__modifiers";           // Modifiers
+@import "partials/__animations";          // Animations
