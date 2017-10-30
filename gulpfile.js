@@ -4,6 +4,7 @@ const gulp = require('gulp'),
 	clean = require('gulp-clean'),
 	cleanCSS = require('gulp-clean-css'),
 	imageMin = require('gulp-imagemin'),
+	concat = require('gulp-concat'),
 	uglify = require('gulp-uglify');
 
 const paths = {
@@ -23,6 +24,7 @@ gulp.task('css', function() {
 
 gulp.task('js', function () {
 	return gulp.src(paths.js)
+	.pipe(concat('bundle.js'))
 	.pipe(uglify({mangle:true}))
 	.pipe(gulp.dest('docs'))
 	.pipe(connect.reload());

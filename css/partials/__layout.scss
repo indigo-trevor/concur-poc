@@ -1,0 +1,24 @@
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0px 0px;
+  .slideshow {
+    position: relative;
+    padding: 0px 0px;
+    .slick-prev {
+      left: 15px !important;
+      z-index: 9;
+    }
+    .slick-next {
+      right: 15px !important;
+      z-index: 9;
+    }
+    &__slide {
+      position: relative;
+      width: 100vw;
+      height: 95vh;
+      background: indigo;
+    }
+  }
+}

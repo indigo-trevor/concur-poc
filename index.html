@@ -5,18 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Concur POC</title>
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <h1>Concur POC</h1>
+    <section>
+      <div class="slideshow-container row">
+        <div class="slideshow col-12">
+          <!-- START: Slide 1 -->
+          <div class="slideshow__slide" id="simple1">
+            <h1 data-delay="0.5s" data-animation="slideInRight">Intro</h1>
+          </div>
+          <!-- END: Slide 1 -->
+          <!-- START: Slide 2 -->
+          <div class="slideshow__slide" id="simple2">
+            <h1 data-delay="0.5s" data-animation="slideInRight">Slide 2</h1>
+          </div>
+          <!-- END: Slide 2 -->
+          <!-- START: Slide 3 -->
+          <div class="slideshow__slide" id="simple3">
+            <h1 data-delay="0.5s" data-animation="slideInRight">Slide 3</h1>
+          </div>
+          <!-- END: Slide 3 -->
+        </div>
+      </div>
+    </section>
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenLite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/CSSPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/utils/Draggable.min.js"></script>
-    <script src="main.js"></script>
+    <script src="bundle.js"></script>
   </body>
 </html>
