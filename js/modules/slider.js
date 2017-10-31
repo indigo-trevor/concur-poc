@@ -8,8 +8,7 @@ var Slider = (function() {
       infinite: false,
       swipe: false,
       arrows: false,
-      speed: 0,
-      fade: true
+      speed: 350
     });
 
     $('.slideshow').on('init', function(e, slick) {
@@ -19,7 +18,13 @@ var Slider = (function() {
 
     $('.slideshow').on('beforeChange', function(e, slick, currentSlide, nextSlide) {
       var $animatingElements = $('div.slideshow__slide[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
-      doAnimations($animatingElements);
+      console.log(currentSlide)
+      console.log(nextSlide)
+      if (nextSlide > currentSlide) {
+        animateNext($animatingElements);
+      } else {
+        animatePrev($animatingElements);
+      }
     });
 
   }
@@ -32,13 +37,30 @@ var Slider = (function() {
     $('.slideshow').slick('slickPrev');
   }
 
-  function doAnimations(elements) {
+  function animateNext(elements) {
     var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
     elements.each(function() {
       var $this = $(this);
       var $animationDelay = $this.data('delay');
       var $animationType = 'animated ' + $this.data('animation');
-      console.log($animationType)
+      $animationType = 'animated fadeInRight';
+      $this.css({
+        'animation-delay': $animationDelay,
+        '-webkit-animation-delay': $animationDelay
+      });
+      $this.addClass($animationType).one(animationEndEvents, function() {
+        $this.removeClass($animationType);
+      });
+    });
+  }
+
+  function animatePrev(elements) {
+    var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    elements.each(function() {
+      var $this = $(this);
+      var $animationDelay = $this.data('delay');
+      var $animationType = 'animated ' + $this.data('animation');
+      $animationType = 'animated fadeInLeft';
       $this.css({
         'animation-delay': $animationDelay,
         '-webkit-animation-delay': $animationDelay

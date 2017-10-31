@@ -18,19 +18,19 @@
       position: relative;
       height: 95vh;
       &--1 {
-        background: indigo;
+        background: lightblue;
       }
       &--2 {
-        background: salmon;
+        background: lightgreen;
       }
       &--3 {
-        background: green;
+        background: lightpink;
       }
       &--4 {
-        background: blue;
+        background: salmon;
       }
       &--5 {
-        background: yellow;
+        background: indigo;
       }
       .content {
         position: relative;
@@ -39,6 +39,7 @@
           position: relative;
           max-width: 1440px;
           margin: 0 auto;
+          padding: 0px 15px;
         }
       }
     }
