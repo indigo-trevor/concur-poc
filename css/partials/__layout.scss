@@ -16,9 +16,31 @@
     }
     &__slide {
       position: relative;
-      width: 100vw;
       height: 95vh;
-      background: indigo;
+      &--1 {
+        background: indigo;
+      }
+      &--2 {
+        background: salmon;
+      }
+      &--3 {
+        background: green;
+      }
+      &--4 {
+        background: blue;
+      }
+      &--5 {
+        background: yellow;
+      }
+      .content {
+        position: relative;
+        width: 100vw;
+        &__inner {
+          position: relative;
+          max-width: 1440px;
+          margin: 0 auto;
+        }
+      }
     }
   }
 }

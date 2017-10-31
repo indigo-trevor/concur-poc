@@ -1,0 +1,18 @@
+// Navigation arrows
+.arrow {
+  position: absolute;
+  top: 45%;
+  &--previous {
+    left: 0px;
+  }
+  &--next {
+    right: 0px;
+  }
+}
+
+// Content container styling
+.content {
+  img {
+    width: 100%;
+  }
+}
