@@ -9,20 +9,23 @@ var Slider = (function() {
       infinite: false,
       swipe: false,
       arrows: false,
-      speed: 500,
-      fade: true
+      speed: 350
     });
 
-    // $('.slideshow').on('init', function(e, slick) {
-    //   var $firstAnimatingElements = $('div.slideshow__slide:first-child').find('[data-animation]');
-    //   doAnimations($firstAnimatingElements);
-    // });
+    $('.slideshow').on('init', function(e, slick) {
+      var $firstAnimatingElements = $('div.slideshow__slide:first-child').find('[data-animation]');
+      doAnimations($firstAnimatingElements);
+    });
 
     $('.slideshow').on('beforeChange', function(e, slick, currentSlide, nextSlide) {
-      var $animatingLeavingElements = $('div.slideshow__slide[data-slick-index="' + currentSlide + '"]').find('[data-animation]');
-      var $animatingEnteringElements = $('div.slideshow__slide[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
-      animatePrev($animatingLeavingElements);
-      animateNext($animatingEnteringElements);
+      var $animatingElements = $('div.slideshow__slide[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
+      console.log(currentSlide)
+      console.log(nextSlide)
+      if (nextSlide > currentSlide) {
+        animateNext($animatingElements);
+      } else {
+        animatePrev($animatingElements);
+      }
     });
 
   }
@@ -35,30 +38,13 @@ var Slider = (function() {
     $('.slideshow').slick('slickPrev');
   }
 
-  function animatePrev(elements) {
-    var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-    elements.each(function() {
-      var $this = $(this);
-      var $animationDelay = $this.data('delay');
-      var $animationType = 'animated ' + $this.data('animation');
-      $animationType = 'animated growLarger';
-      $this.css({
-        'animation-delay': $animationDelay,
-        '-webkit-animation-delay': $animationDelay
-      });
-      $this.addClass($animationType).one(animationEndEvents, function() {
-        $this.removeClass($animationType);
-      });
-    });
-  }
-
   function animateNext(elements) {
     var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
     elements.each(function() {
       var $this = $(this);
       var $animationDelay = $this.data('delay');
       var $animationType = 'animated ' + $this.data('animation');
-      $animationType = 'animated zoomIn';
+      $animationType = 'animated fadeInRight';
       $this.css({
         'animation-delay': $animationDelay,
         '-webkit-animation-delay': $animationDelay
@@ -69,6 +55,22 @@ var Slider = (function() {
     });
   }
 
+  function animatePrev(elements) {
+    var animationEndEvents = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    elements.each(function() {
+      var $this = $(this);
+      var $animationDelay = $this.data('delay');
+      var $animationType = 'animated ' + $this.data('animation');
+      $animationType = 'animated fadeInLeft';
+      $this.css({
+        'animation-delay': $animationDelay,
+        '-webkit-animation-delay': $animationDelay
+      });
+      $this.addClass($animationType).one(animationEndEvents, function() {
+        $this.removeClass($animationType);
+      });
+    });
+  }
 
   return {
     init: init,

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Concur Zoom Transition</title>
+    <title>Concur Slide Transition</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css" />
@@ -15,24 +15,24 @@
         <div class="slideshow">
           <!-- START: Slide 1 = Home -->
           <div class="slideshow__slide slideshow__slide--1">
-            <div class="content" data-animation="zoomIn">
+            <div class="content">
               <div class="content__inner card card--home">
                 <div class="row header-container">
-                  <div class="col-12">
+                  <div class="col-12" data-delay="0.25s" data-animation="fadeInRight">
                     <h1>Travel Made Easy</h1>
                     <h3>Placeholder CTA</h3>
                   </div>
                 </div>
                 <div class="row cta-container">
-                  <div class="col-4">
+                  <div class="col-4" data-delay="0.25s" data-animation="fadeInRight">
                     <h4>CTA #1</h4>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                   </div>
-                  <div class="col-4">
+                  <div class="col-4" data-delay="0.35s" data-animation="fadeInRight">
                     <h4>CTA #2</h4>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                   </div>
-                  <div class="col-4">
+                  <div class="col-4" data-delay="0.45s" data-animation="fadeInRight">
                     <h4>CTA #3</h4>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                   </div>
@@ -43,10 +43,10 @@
           <!-- END: Slide 1 = Home -->
           <!-- START: Slide 2 = Pre/Intro -->
           <div class="slideshow__slide slideshow__slide--2">
-            <div class="content" data-animation="zoomIn">
+            <div class="content">
               <div class="content__inner card card--intro">
                 <div class="row">
-                  <div class="col-3 header-container">
+                  <div class="col-3 header-container" data-delay="0.15s" data-animation="fadeInRight">
                     <h1>Packing the right tools for the right trip</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                   </div>
@@ -55,22 +55,22 @@
                   <div class="row">
                     <div class="col-3"></div>
                     <div class="col-6">
-                      <img data-lazy="img/suitcase-placeholder.PNG" alt="">
+                      <img data-lazy="img/suitcase-placeholder.PNG" data-delay="0.25s" data-animation="fadeInRight" alt="">
                     </div>
                     <div class="col-3"></div>
                   </div>
                   <div class="row sticker-container">
-                    <div class="col-4 sticker">
+                    <div class="col-4 sticker" data-delay="0.25s" data-animation="fadeInRight">
                       <div class="sticker__inner">
                         <h3>Business Conference</h3>
                       </div>
                     </div>
-                    <div class="col-4 sticker">
+                    <div class="col-4 sticker" data-delay="0.35s" data-animation="fadeInRight">
                       <div class="sticker__inner">
                         <h3>Internal Meeting</h3>
                       </div>
                     </div>
-                    <div class="col-4 sticker">
+                    <div class="col-4 sticker" data-delay="0.45s" data-animation="fadeInRight">
                       <div class="sticker__inner">
                         <h3>Client Meeting</h3>
                       </div>
@@ -83,16 +83,16 @@
           <!-- END: Slide 2 = Pre/Intro -->
           <!-- START: Slide 3 = Pre/Feautures-->
           <div class="slideshow__slide slideshow__slide--3">
-            <div class="content" data-animation="zoomIn">
+            <div class="content">
               <div class="content__inner card card--feature">
                 <div class="row header-container">
-                  <div class="col-3">
+                  <div class="col-3" data-delay="0.15s" data-animation="fadeInRight">
                     <h1>Pre trip features</h1>
                   </div>
                 </div>
                 <div class="row feature-container">
                   <div class="col-2"></div>
-                  <div class="col-8">
+                  <div class="col-8" data-delay="0.25s" data-animation="fadeInRight">
                     <img data-lazy="img/feautures-placeholder.PNG" alt="">
                   </div>
                   <div class="col-2"></div>
@@ -103,10 +103,10 @@
           <!-- END: Slide 3 = Pre/Feautures -->
           <!-- START: Slide 4 = During/Intro -->
           <div class="slideshow__slide slideshow__slide--4">
-            <div class="content" data-animation="zoomIn">
+            <div class="content">
               <div class="content__inner card card--intro">
                 <div class="row">
-                  <div class="col-3 header-container">
+                  <div class="col-3 header-container" data-delay="0.15s" data-animation="fadeInRight">
                     <h1>How is your travel outlook?</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                   </div>
@@ -115,8 +115,8 @@
                   <div class="row">
                     <div class="col-3"></div>
                     <div class="col-6">
-                      <img data-lazy="img/8-ball-placeholder.PNG" alt="">
-                      <p>Shake the Magic 8-ball with your mouse to reveal your travel fortune.</p>
+                      <img data-lazy="img/8-ball-placeholder.PNG" data-delay="0.25s" data-animation="fadeInRight" alt="">
+                      <p data-delay="0.35s" data-animation="fadeInRight">Shake the Magic 8-ball with your mouse to reveal your travel fortune.</p>
                     </div>
                     <div class="col-3"></div>
                   </div>
@@ -127,16 +127,16 @@
           <!-- END: Slide 4 = During/Intro -->
           <!-- START: Slide 5 = During/Features -->
           <div class="slideshow__slide slideshow__slide--5">
-            <div class="content" data-animation="zoomIn">
+            <div class="content">
               <div class="content__inner card card--feature">
                 <div class="row header-container">
-                  <div class="col-3">
+                  <div class="col-3" data-delay="0.15s" data-animation="fadeInRight">
                     <h1>During features</h1>
                   </div>
                 </div>
                 <div class="row feature-container">
                   <div class="col-2"></div>
-                  <div class="col-8">
+                  <div class="col-8" data-delay="0.25s" data-animation="fadeInRight">
                     <img data-lazy="img/feautures-placeholder.PNG" alt="">
                   </div>
                   <div class="col-2"></div>
@@ -147,10 +147,10 @@
           <!-- END: Slide 5 = During/Features -->
           <!-- START: Slide 6 = Post/Intro -->
           <div class="slideshow__slide slideshow__slide--6">
-            <div class="content" data-animation="zoomIn">
+            <div class="content">
               <div class="content__inner card card--intro">
                 <div class="row">
-                  <div class="col-3 header-container">
+                  <div class="col-3 header-container" data-delay="0.15s" data-animation="fadeInRight">
                     <h1>Tallying up your trip</h1>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                   </div>
@@ -159,8 +159,8 @@
                   <div class="row">
                     <div class="col-3"></div>
                     <div class="col-6">
-                      <img data-lazy="img/doughnut-placeholder.PNG" alt="">
-                      <p>Click on the doughnut to take a bite.</p>
+                      <img data-lazy="img/doughnut-placeholder.PNG" data-delay="0.25s" data-animation="fadeInRight" alt="">
+                      <p data-delay="0.35s" data-animation="fadeInRight">Click on the doughnut to take a bite.</p>
                     </div>
                     <div class="col-3"></div>
                   </div>
@@ -171,16 +171,16 @@
           <!-- END: Slide 6 = Post/Intro -->
           <!-- START: Slide 7 = Post/Features -->
           <div class="slideshow__slide slideshow__slide--7">
-            <div class="content" data-animation="zoomIn">
+            <div class="content">
               <div class="content__inner card card--feature">
                 <div class="row header-container">
-                  <div class="col-3">
+                  <div class="col-3" data-delay="0.15s" data-animation="fadeInRight">
                     <h1>Post features</h1>
                   </div>
                 </div>
                 <div class="row feature-container">
                   <div class="col-2"></div>
-                  <div class="col-8">
+                  <div class="col-8" data-delay="0.25s" data-animation="fadeInRight">
                     <img data-lazy="img/feautures-placeholder.PNG" alt="">
                   </div>
                   <div class="col-2"></div>
@@ -191,31 +191,31 @@
           <!-- END: Slide 7 = Post/Features -->
           <!-- START: Slide 8 = Benefits -->
           <div class="slideshow__slide slideshow__slide--8">
-            <div class="content" data-animation="zoomIn">
+            <div class="content">
               <div class="content__inner card card--benefits">
                 <div class="row header-container">
                   <div class="col-3">
-                    <h1>Now thats travel made easy</h1>
+                    <h1 data-delay="0.25s" data-animation="fadeInRight">Now thats travel made easy</h1>
                   </div>
                 </div>
                 <div class="body-container">
-                  <div class="row">
+                  <div class="row" data-delay="0.05s" data-animation="fadeInRight">
                     <div class="col-12">
                       <h2>Get started in three easy steps</h2>
                     </div>
                   </div>
                   <div class="row cta-container">
-                    <div class="col-4">
+                    <div class="col-4" data-delay="0.25s" data-animation="fadeInRight">
                       <h4>Step 1: Enroll in My Travel Network</h4>
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                       <button>Enroll now</button>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4" data-delay="0.35s" data-animation="fadeInRight">
                       <h4>Step 2: Add rewards accounts</h4>
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                       <button>Add accounts</button>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4" data-delay="0.45s" data-animation="fadeInRight">
                       <h4>Step 3: Connect to TripIt Pro</h4>
                       <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                       <button>Get started</button>
