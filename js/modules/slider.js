@@ -44,7 +44,7 @@ var Slider = (function() {
       var $this = $(this);
       var $animationDelay = $this.data('delay');
       var $animationType = 'animated ' + $this.data('animation');
-      $animationType = 'animated fadeInRight';
+      $animationType = 'animated slideInRight';
       $this.css({
         'animation-delay': $animationDelay,
         '-webkit-animation-delay': $animationDelay
@@ -61,7 +61,7 @@ var Slider = (function() {
       var $this = $(this);
       var $animationDelay = $this.data('delay');
       var $animationType = 'animated ' + $this.data('animation');
-      $animationType = 'animated fadeInLeft';
+      $animationType = 'animated slideInLeft';
       $this.css({
         'animation-delay': $animationDelay,
         '-webkit-animation-delay': $animationDelay
