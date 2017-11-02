@@ -1280,10 +1280,26 @@
   animation-name: rollOut;
 }
 
+@keyframes growLarger {
+  from {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(2, 2, 2);
+  }
+}
+
+.growLarger {
+  animation-name: growLarger;
+}
+
 @keyframes zoomIn {
   from {
     opacity: 0;
-    transform: scale3d(.3, .3, .3);
+    transform: scale3d(.1, .1, .1);
   }
 
   50% {
@@ -1292,6 +1308,7 @@
 }
 
 .zoomIn {
+  animation-delay: .15s;
   animation-name: zoomIn;
 }
 

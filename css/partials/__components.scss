@@ -16,3 +16,89 @@
     width: 100%;
   }
 }
+
+// Cards
+.card {
+  position: relative;
+  width: 100%;
+  .header-container {
+    h1 {
+      font-size: 2em;
+    }
+  }
+  &--home {
+    .header-container {
+      text-align: center;
+      @include vertical-align();
+    }
+    .cta-container {
+      text-align: center;
+      position: absolute;
+      background-color: $lightgrey;
+      bottom: 15px;
+      left: 30px;
+      width: calc(100% - 30px);
+      padding: 25px 0px;
+      h4 {
+        margin-top: 0px;
+      }
+    }
+  }
+  &--intro {
+    .header-container {
+      h1 {
+        color: $gold;
+      }
+    }
+    .experience-container {
+      @include vertical-align();
+      position: absolute;
+      width: calc(100% - 30px);
+      text-align: center;
+      .sticker-container {
+        margin-top: 25px;
+        .sticker {
+          &__inner {
+            text-align: center;
+            margin: 0 auto;
+            position: relative;
+            width: 175px;
+            border-radius: 50%;
+            border: 2px solid $black;
+            padding: 5px 25px;
+          }
+        }
+      }
+    }
+  }
+  &--feature {
+    .header-container {
+      color: $grey;
+    }
+    .feature-container {
+      @include vertical-align();
+      position: absolute;
+      width: calc(100% - 30px);
+      text-align: center;
+    }
+  }
+  &--benefits {
+    .body-container {
+      text-align: center;
+      @include vertical-align();
+      position: absolute;
+      width: calc(100% - 30px);
+      .cta-container {
+        button {
+          cursor: pointer;
+          background-color: $blue;
+          color: #fff;
+          border: none;
+          border-radius: 20px;
+          padding: 8px 15px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}

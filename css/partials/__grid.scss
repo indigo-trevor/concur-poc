@@ -290,7 +290,6 @@ $enable-grid-classes: true !default;
 @if $enable-grid-classes {
     .row {
         @include make-row();
-        margin-bottom: 25px; // temp
     }
     // Remove the negative margin from default .row, then the horizontal padding
     // from all immediate children columns (to prevent runaway style inheritance).
