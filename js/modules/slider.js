@@ -2,6 +2,7 @@ var Slider = (function() {
 
   function init() {
     $('.slideshow').slick({
+      lazyLoad: 'ondemand',
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: true,
