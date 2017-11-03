@@ -11,7 +11,8 @@ const paths = {
 	js: ['js/*', 'js/*/*'],
 	css: ['css/**/*.scss'],
 	img: ['img/*'],
-	html: ['index.html']
+	html: ['index.html'],
+	fonts: ['fonts/*']
 }
 
 gulp.task('css', function() {
@@ -60,6 +61,12 @@ gulp.task('images', function(){
 		.pipe(connect.reload());
 });
 
+gulp.task('fonts', function(){
+	gulp.src(paths.fonts)
+		.pipe(gulp.dest('docs/fonts'))
+		.pipe(connect.reload());
+});
+
 gulp.task('serve', function(){
 	connect.server({
 		root:'docs',
@@ -69,4 +76,4 @@ gulp.task('serve', function(){
 	})
 });
 
-gulp.task('start', ['serve','watch', 'html', 'css', 'js', 'images']);
+gulp.task('start', ['serve','watch', 'html', 'css', 'js', 'images', 'fonts']);

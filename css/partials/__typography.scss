@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Benton Sans Regular", sans-serif;
+  src:  url("fonts/BentonSans-Regular.otf");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Benton Sans Bold", sans-serif;
+  src:  url("fonts/BentonSans-Bold.otf");
+  font-style: normal;
+  font-weight: 500;
+}
+#indigo-wrapper {
+  h1,h2,h3,h4 {
+    font-family: "Benton Sans Bold", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+  }
+  h5,h6,p,span,a,button,input {
+    font-family: "Benton Sans Regular", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+  }
+  h1 {
+    font-size: 2em;
+    line-height: 1.25em;
+  }
+  h2 {
+    font-size: 1.75em;
+    line-height: 1.25em;
+  }
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+  h4 {
+    font-size: 1em;
+    line-height: 1.25em;
+  }
+  p,span,a,button,input {
+    font-size: 1em;
+    line-height: 1.25em;
+  }
+}

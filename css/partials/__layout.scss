@@ -16,7 +16,8 @@
     }
     &__slide {
       position: relative;
-      height: calc(100vh - 135px);
+      height: calc(100vh - 159px);
+      padding-bottom: 35px;
       .content {
         position: relative;
         width: 100vw;
