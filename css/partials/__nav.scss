@@ -10,9 +10,9 @@
       position: relative;
       width: 100%;
       height: 75px;
-      max-width: 1440px;
       margin: 0 auto;
       padding: 0px 15px;
+      max-width: $maxWidth;
       h3 {
         @include vertical-align();
         margin: 0px 0px;
@@ -27,9 +27,9 @@
     &__inner {
       position: relative;
       width: 100%;
-      max-width: 1440px;
       margin: 0 auto;
       padding: 0px 15px;
+      max-width: $maxWidth;
       p {
         position: relative;
         top: 5px;
@@ -51,6 +51,7 @@
     margin: 0 auto;
     padding: 0px 15px;
     color: #fff;
+    max-width: $maxWidth;
     h3 {
       @include vertical-align();
     }
