@@ -4,6 +4,11 @@ var Doughnut = (function() {
     $(".doughnut-phase--1").click(function() {
       $(".doughnut-phase--1").hide();
       $(".doughnut-phase--2").show();
+      // Animation
+      TweenLite.to(".doughnut-phase--2 svg", .1, { rotation: 15 , x: -20, ease: Linear.easeNone });
+      TweenLite.to("#doughnut--1--animated--1", .55, { x: 15 , y: 15, ease: Linear.Back });
+      TweenLite.to("#doughnut--1--animated--2", .55, { rotation: -90, x: 55 , y: 75, ease: Linear.Back });
+      TweenLite.to("#doughnut--1--animated--3", .55, { rotation: -90, x: 20 , y: 35, ease: Linear.Back });
     });
     $(".doughnut-phase--2").click(function() {
       $(".doughnut-phase--2").hide();
@@ -45,6 +50,9 @@ var Doughnut = (function() {
     $(".doughnut-phase--7").hide();
     $(".doughnut-phase--8").hide();
     $(".doughnut-phase--9").hide();
+    // Phase 1 reset
+    TweenLite.to(".doughnut-phase--2 svg", .1, { rotation: 0 , ease: Linear.easeNone });
+    TweenLite.to("#doughnut--1--animated--1", .1, { x: 0 , y: 0, ease: Linear.easeNone });
   }
 
   return {

@@ -71,3 +71,22 @@
     }
   }
 }
+
+
+// Doughnut Animations
+@keyframes slideInAndRotateLeft {
+  from {
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInAndRotateLeft {
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+  animation-name: slideInAndRotateLeft;
+}
