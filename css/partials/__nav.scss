@@ -4,7 +4,6 @@
   width: 100%;
   .main-nav {
     background-color: #111;
-    color: #fff;
     width: 100%;
     .container {
       position: relative;
@@ -13,6 +12,7 @@
       .row {
         @include vertical-align();
         h3 {
+          color: #fff !important;
           margin: 0px 0px;
         }
       }
@@ -29,7 +29,7 @@
       p {
         position: relative;
         top: 5px;
-        color: #fff;
+        color: #fff !important;
         margin: 0px 0px;
       }
     }
@@ -43,13 +43,12 @@
     position: relative;
     width: 100%;
     height: 235px;
-    max-width: $maxWidth;
-    margin: 0 auto;
-    padding: 0px 15px;
-    color: #fff;
-    max-width: $maxWidth;
-    h3 {
+    .row {
       @include vertical-align();
+      h3 {
+        color: #fff !important;
+        margin: 0px 0px;
+      }
     }
   }
 }

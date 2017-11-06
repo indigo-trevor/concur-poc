@@ -10,21 +10,23 @@ var Slider = (function() {
       arrows: false,
       speed: 350
     });
-
+    //  Animate content on init
     $('.slideshow').on('init', function(e, slick) {
       var $firstAnimatingElements = $('div.slideshow__slide:first-child').find('[data-animation]');
       doAnimations($firstAnimatingElements);
     });
-
+    // Animate content before slide transition
     $('.slideshow').on('beforeChange', function(e, slick, currentSlide, nextSlide) {
       var $animatingElements = $('div.slideshow__slide[data-slick-index="' + nextSlide + '"]').find('[data-animation]');
-      console.log(currentSlide)
-      console.log(nextSlide)
       if (nextSlide > currentSlide) {
         animateNext($animatingElements);
       } else {
         animatePrev($animatingElements);
       }
+    });
+    // Reset Doughnut
+    $('.slideshow').on('afterChange', function(e, slick, currentSlide, nextSlide) {
+      Doughnut.resetDoughnut();
     });
 
   }

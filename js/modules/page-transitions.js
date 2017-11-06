@@ -1,10 +1,10 @@
 var PageTransitions = (function() {
 
   function init() {
-    $( ".arrow--previous" ).click(function() {
+    $(".arrow--prev").click(function() {
       Slider.prev();
     });
-    $( ".arrow--next" ).click(function() {
+    $(".arrow--next").click(function() {
       Slider.next();
     });
   }

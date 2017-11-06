@@ -15,11 +15,25 @@
     font-family: "Benton Sans Bold", sans-serif;
     font-style: normal;
     font-weight: 700;
+    color: $black;
   }
-  h5,h6,p,span,a,button,input {
+  h5,h6,p,span {
     font-family: "Benton Sans Regular", sans-serif;
     font-style: normal;
     font-weight: 500;
+    color: $black;
+  }
+  button,input {
+    font-family: "Benton Sans Regular", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  a {
+    font-family: "Benton Sans Regular", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: $blue;
   }
   h1 {
     font-size: 2em;

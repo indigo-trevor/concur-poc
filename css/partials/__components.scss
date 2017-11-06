@@ -1,12 +1,31 @@
 // Navigation arrows
-.arrow {
+.arrow-container {
   position: absolute;
-  top: 45%;
-  &--previous {
-    left: 0px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  img {
+    position: relative;
+    width: 100%;
   }
-  &--next {
-    right: 0px;
+  .container {
+    position: relative;
+    height: 100%;
+  }
+  .arrow {
+    cursor: pointer;
+    width: 50px;
+    @include vertical-align();
+    top: 45%;
+    position: absolute;
+    z-index: 10;
+    &--prev {
+      left: 0px;
+    }
+    &--next {
+      right: 0px;
+    }
   }
 }
 
@@ -38,7 +57,7 @@
       }
       h3 {
         margin: 0px 0px;
-        color: $blue;
+        color: $blue !important;
         max-width: 435px;
         margin: 0 auto;
       }
@@ -60,7 +79,7 @@
     .header-container {
       margin-top: 2em;
       h1 {
-        color: $gold;
+        color: $gold !important;
         margin-top: 0px;
       }
     }
@@ -90,7 +109,7 @@
     .header-container {
       margin-top: 2em;
       h1 {
-        color: $gold;
+        color: $gold !important;
         margin-top: 0px;
       }
     }
@@ -105,7 +124,7 @@
     .header-container {
       margin-top: 2em;
       h1 {
-        color: $gold;
+        color: $gold !important;
         margin-top: 0px;
       }
     }
@@ -118,7 +137,7 @@
         button {
           cursor: pointer;
           background-color: $blue;
-          color: #fff;
+          color: #fff !important;
           border: none;
           border-radius: 20px;
           padding: 8px 15px;

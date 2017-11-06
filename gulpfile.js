@@ -10,7 +10,7 @@ const gulp = require('gulp'),
 const paths = {
 	js: ['js/*', 'js/*/*'],
 	css: ['css/**/*.scss'],
-	img: ['img/*'],
+	img: ['img/*', 'img/*/*'],
 	html: ['index.html'],
 	fonts: ['fonts/*']
 }
