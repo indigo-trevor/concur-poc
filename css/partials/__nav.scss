@@ -6,16 +6,15 @@
     background-color: #111;
     color: #fff;
     width: 100%;
-    &__inner {
+    .container {
       position: relative;
       width: 100%;
       height: 75px;
-      margin: 0 auto;
-      padding: 0px 15px;
-      max-width: $maxWidth;
-      h3 {
+      .row {
         @include vertical-align();
-        margin: 0px 0px;
+        h3 {
+          margin: 0px 0px;
+        }
       }
     }
   }
@@ -24,12 +23,9 @@
     opacity: 0.6;
     width: 100%;
     height: 30px;
-    &__inner {
+    .container {
       position: relative;
       width: 100%;
-      margin: 0 auto;
-      padding: 0px 15px;
-      max-width: $maxWidth;
       p {
         position: relative;
         top: 5px;
@@ -47,7 +43,7 @@
     position: relative;
     width: 100%;
     height: 235px;
-    max-width: 1440px;
+    max-width: $maxWidth;
     margin: 0 auto;
     padding: 0px 15px;
     color: #fff;
