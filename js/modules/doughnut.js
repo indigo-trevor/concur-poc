@@ -55,6 +55,12 @@ var Doughnut = (function() {
       $(".doughnut-phase--6").show();
       // Play sound effect
       playAudioDoughnut();
+      // Animation
+      TweenLite.to(".doughnut-phase svg", .1, { rotation: 0 , x: -20, ease: Linear.easeNone });
+      TweenLite.to("#doughnut--6--animated--1", .55, { rotation: -90, x: 75, y: 40, ease: Linear.Back });
+      TweenLite.to("#doughnut--6--animated--2", .55, { rotation: 25, x: 80, y: 0, ease: Linear.Back });
+      TweenLite.to("#doughnut--6--animated--3", .55, { rotation: -90, x: 50, y: 25, ease: Linear.Back });
+      TweenLite.to("#doughnut--6--animated--4", .55, { rotation: 70, x: 75, y: 30, ease: Linear.Back });
     });
     $(".doughnut-phase--6").click(function() {
       // Show next svg and hide current svg
@@ -62,6 +68,11 @@ var Doughnut = (function() {
       $(".doughnut-phase--7").show();
       // Play sound effect
       playAudioDoughnut();
+      // Animation
+      TweenLite.to(".doughnut-phase svg", .1, { rotation: -15 , x: -10, ease: Linear.easeNone });
+      TweenLite.to("#doughnut--7--animated--1", .55, { rotation: 45, x: 0, y: -5, ease: Linear.Back });
+      TweenLite.to("#doughnut--7--animated--2", .55, { rotation: -25, x: -5, y: -10, ease: Linear.Back });
+      TweenLite.to("#doughnut--7--animated--3", .55, { rotation: -25, x: -15, y: -15, ease: Linear.Back });
     });
     $(".doughnut-phase--7").click(function() {
       // Show next svg and hide current svg
@@ -69,6 +80,12 @@ var Doughnut = (function() {
       $(".doughnut-phase--8").show();
       // Play sound effect
       playAudioDoughnut();
+      // Animation
+      TweenLite.to(".doughnut-phase svg", .1, { rotation: -30 , x: 0, ease: Linear.easeNone });
+      TweenLite.to("#doughnut--8--animated--1", .55, { rotation: 45, x: -5, y: -50, ease: Linear.Back });
+      TweenLite.to("#doughnut--8--animated--2", .55, { rotation: -45, x: -65, y: 5, ease: Linear.Back });
+      TweenLite.to("#doughnut--8--animated--3", .55, { rotation: -45, x: -25, y: -5, ease: Linear.Back });
+      TweenLite.to("#doughnut--8--animated--4", .55, { rotation: 45, x: -25, y: -15, ease: Linear.Back });
     });
     $(".doughnut-phase--8").click(function() {
       // Show next svg and hide current svg
@@ -76,6 +93,14 @@ var Doughnut = (function() {
       $(".doughnut-phase--9").show();
       // Play sound effect
       playAudioDoughnut();
+      // Animation
+      TweenLite.to(".doughnut-phase svg", .1, { rotation: 0 , x: 0, ease: Linear.easeNone });
+      TweenLite.to("#doughnut--9--animated--0", .35, { y: -25, ease: Linear.Back });
+      TweenLite.to("#doughnut--9--animated--1", .55, { rotation: 45, x: 45, y: 45, ease: Linear.Back });
+      TweenLite.to("#doughnut--9--animated--2", .55, { rotation: -25, x: 5, y: 50, ease: Linear.Back });
+      TweenLite.to("#doughnut--9--animated--3", .55, { rotation: -45, x: 10, y: 30, ease: Linear.Back });
+      TweenLite.to("#doughnut--9--animated--4", .55, { rotation: 45, x: 10, y: 45, ease: Linear.Back });
+      TweenLite.to("#doughnut--9--animated--5", .55, { rotation: 10, x: 15, y: 5, ease: Linear.Back });
     });
   }
 
