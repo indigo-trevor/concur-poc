@@ -12,7 +12,8 @@ const paths = {
 	css: ['css/**/*.scss'],
 	img: ['img/*', 'img/*/*'],
 	html: ['index.html'],
-	fonts: ['fonts/*']
+	fonts: ['fonts/*'],
+	audio: ['audio/*']
 }
 
 gulp.task('css', function() {
@@ -67,6 +68,12 @@ gulp.task('fonts', function(){
 		.pipe(connect.reload());
 });
 
+gulp.task('audio', function(){
+	gulp.src(paths.audio)
+		.pipe(gulp.dest('docs/audio'))
+		.pipe(connect.reload());
+});
+
 gulp.task('serve', function(){
 	connect.server({
 		root:'docs',
@@ -76,4 +83,4 @@ gulp.task('serve', function(){
 	})
 });
 
-gulp.task('start', ['serve','watch', 'html', 'css', 'js', 'images', 'fonts']);
+gulp.task('start', ['serve','watch', 'html', 'css', 'js', 'images', 'fonts', 'audio']);
